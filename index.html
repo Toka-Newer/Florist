@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/84e17ee5b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" alt="Florist" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#">
+                        <img src="./images/bag.png" alt="Cart" />
+                    </a>
+                    <span id="count"></span>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="mySlides main">
+                <img class="headerImg" src="./images/anna-sullivan-ARrM9jUl780-unsplash.jpg" style="width: 100%" />
+                <div class="headerText">
+                    <span>Fresh Flower & Gift Shop</span>
+                    <h2>Making beautiful flowers a part of your life.</h2>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <img class="headerImg" src="./images/evie-s-bSVGnUCk4tk-unsplash.jpg" style="width: 100%" />
+                <div class="headerText">
+                    <span>Fresh Flower & Gift Shop</span>
+                    <h2>Making beautiful flowers a part of your life.</h2>
+                </div>
+            </div>
+
+            <div class="direction">
+                <a class="prev" onclick="showSlider('prev')">❮</a>
+                <a class="next" onclick="showSlider('next')">❯</a>
+            </div>
+        </header>
+
+        <!-- about us -->
+        <section class="container about my-5">
+            <div class="row mb-5">
+                <div class="col-md-5">
+                    <span>ABOUT US</span>
+                    <h2>We provide all <br /> kinds of fresh flower services</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        For Heather Henson, of Boreal Blooms in Cold Lake, Alberta, Canada,
+                        growing flowers that can be dried and incorporated into late fall
+                        and winter floral arrangements has been a game-changer. During her
+                        growing season, this farmer-florist relies on a vivid palette of
+                        annuals, perennials and ornamental grasses to supply her studio.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="aboutImg"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="secondAbout">
+                        <span class="my-5">SLOW FLOWERS’ FLORAL INSIGHTS</span>
+                        <h2 class="mb-4">Dried flowers are having a renaissance</h2>
+                        <p class="mb-5">This awareness has been stimulated by sustainable sourcing practices and the
+                            desire on the
+                            part of North American flower growers to “extend the season” beyond the last frost.</p>
+                        <!-- <a href="#">Contact Us</a> -->
+                        <button type="button" class="btn"> <a href="./form.html">Contact Us</a> </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- filter -->
+        <section class="filter my-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12 text-center">
+                        <div class="mb-4">
+                            <span>OUR FLOWER</span>
+                            <h2>New Arrivals</h2>
+                        </div>
+                        <div id="filterbtn" class="choose col-md-12">
+                            <button type="button" class="btnFilter btn active"
+                                onclick="filterFlowers('all')">All</button>
+                            <button type="button" class="btnFilter btn"
+                                onclick="filterFlowers('bouquet')">Bouquet</button>
+                            <button type="button" class="btnFilter btn" onclick="filterFlowers('shelf')">Flower
+                                shelf</button>
+                            <button type="button" class="btnFilter btn" onclick="filterFlowers('box')">Flower
+                                box</button>
+                            <button type="button" class="btnFilter btn" onclick="filterFlowers('basket')">Basket of
+                                flower</button>
+                            <button type="button" class="btnFilter btn" onclick="filterFlowers('gift')">Gift
+                                combos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-md-4 mb-4 all bouquet">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Bouquet/demi-he-hPcxvCecdPI-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all bouquet">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Bouquet/jessie-daniella-aiNU4cA4UzQ-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all bouquet">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Bouquet/jessie-daniella-QLuleNy8LMM-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all basket">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Basket_of_flower/annie-spratt-KQ6sO8m1ZDE-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all basket">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Basket_of_flower/brigitte-tohm-buUFEtmNnjc-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all box">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Flower_box/christine-sandu-HvPARWnIEhU-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all box">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Flower_box/cloris-ying-vRAllHdGgvE-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all shelf">
+                        <div class="shop">
+                            <div class="backGround"
+                                style="background-image: url('./images/Flower_shelf/federica-galli--4qhiC6RmQw-unsplash.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all gift">
+                        <div class="shop">
+                            <div class="backGround" style="background-image: url('./images/Gift_combos/10a.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 mb-4 all gift">
+                        <div class="shop">
+                            <div class="backGround" style="background-image: url('./images/Gift_combos/9a.jpg');">
+                            </div>
+                            <div class="cart p-4">
+                                <h5>Fly me to the moon</h5>
+                                <span class="mb-3">$27.50</span>
+                                <button type="button" class="btn add">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -- footer-- -->
+        <footer class="footer mt-5">
+            <div class="container">
+                <div class="row content-footer">
+                    <div class="col-xl-4 col-md-6 py-5">
+                        <img src="./images/logo.png" class="mb-4">
+                        <p class="px-2">
+                            The floristry business has a significant market in the corporate and social event world, as
+                            flowers.
+                        </p>
+                    </div>
+                    <div class="col-xl-2 col-md-3 p-5 company">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About us</li>
+                            <li>Services</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-3 p-5 account">
+                        <h4>Account</h4>
+                        <ul>
+                            <li>My cart</li>
+                            <li>Wisslist</li>
+                            <li>Login/Register</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-md-6 p-5">
+                        <h4>Get in touch</h4>
+                        <ul>
+                            <li>69 North Cleveland Street, Memphis,USA.</li>
+                            <li>(123) 8111 9210 - (012) 1111 6868</li>
+                            <li>Florisr@supportthem.com</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!--		scroll up-->
+        <div id="scroll" class="mr-4 float-right">
+            <button onclick="scrollToTop()" class="top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+    <script src="./js/basic.js"></script>
+    <script src="./js/florist.js"></script>
+</body>
+
+</html>

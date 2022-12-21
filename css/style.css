@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 13.2%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    background: #1c1d21;
+    z-index: 1;
+    height: 600px;
+}
+
+.container {
+    max-width: 1300px !important;
+}
+
+/* navbar */
+.navbar {
+    padding: 1.5rem 3rem !important;
+    background-color: rgb(248 249 250 / 30%);
+    box-shadow: 0px 1px 3px rgb(99 134 137 / 16%);
+}
+
+nav .navbar-brand {
+    margin-right: 25%;
+}
+
+nav .navbar-collapse .navbar-nav {
+    font-size: 18px;
+}
+
+nav .navbar-collapse .navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+nav div span {
+    color: #111;
+    font-size: 12px;
+}
+
+/* footer */
+footer {
+    background-color: #f8f9fa;
+    box-shadow: 0px 10px 21px rgb(99 134 137 / 16%);
+}
+
+footer p {
+    line-height: 2;
+}
+
+footer h4 {
+    color: #111111;
+    margin-bottom: 30px;
+}
+
+footer .content-footer {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+footer .company {
+    border-left: 1px solid #eaeaea;
+}
+
+footer .account {
+    border-right: 1px solid #eaeaea;
+}
+
+footer .list {
+    color: #444444;
+    font-size: 15px;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+footer .top {
+    background-color: #f45d96;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #f45d96;
+    font-size: 19px;
+}
+
+/* header */
+.mySlides {
+    display: none
+}
+
+.headerImg {
+    vertical-align: middle;
+    height: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+}
+
+.direction {
+    margin: auto;
+    margin-top: 25px;
+}
+
+.next {
+    float: right;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* top: 365px; */
+    width: auto;
+    padding: 25px;
+    margin-top: -22px;
+    color: #111 !important;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 2;
+    /* user-select: none; */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Caption text */
+.headerText {
+    position: absolute;
+    z-index: 2;
+    top: 37%;
+    /* top: 335px; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #111;
+    background: rgb(210 210 210 / 50%);
+    width: 45%;
+    margin: 0 auto;
+    padding: 45px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.headerText span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.headerText h2 {
+    font-size: 45px;
+    /* padding: 0px 30%; */
+}
+
+.main {
+    display: block;
+}
+
+/* about us */
+.about span {
+    font-size: 16px;
+    color: #f45d96;
+    font-weight: 700;
+}
+
+.about h2 {
+    font-size: 42px;
+    line-height: 1.4;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.aboutImg {
+    background-image: url("../images/hd-wallpaper-gb1f06311b_1920.jpg");
+    height: 535px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.secondAbout {
+    background-color: #fff;
+    box-shadow: 0px 10px 21px rgb(99 134 137 / 16%);
+    padding: 100px 90px 105px 70px;
+    margin-left: -95px;
+    margin-top: -70px;
+    /* margin-bottom: 30px; */
+}
+
+.about button {
+    background-color: #f45d96;
+    color: #151515;
+    padding: 10px 30px;
+    box-shadow: 0px 10px 21px rgb(99 134 137 / 16%);
+}
+
+.about button a {
+    color: #fff;
+}
+
+.about button a:hover {
+    color: rgba(33, 35, 36, 0.88);
+}
+
+/* filter */
+/* .filter .all,.filter .bouquet
+,.filter .basket,.filter .box,
+.filter .shelf,.filter .gift{
+    transition: all 5s ease;
+} */
+.filter span {
+    font-size: 16px;
+    color: #f45d96;
+    font-weight: 700;
+}
+
+.filter h2 {
+    font-size: 42px;
+    line-height: 1.4;
+}
+
+.filter p {
+    font-size: 18px;
+}
+
+.filter .choose button.active,
+.filter .choose button:hover {
+    background-color: #f45d96;
+    color: #fff;
+}
+
+.filter .backGround {
+    height: 344px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter .shop {
+    border: 1px solid rgb(99 134 137 / 16%);
+    box-shadow: 0px 10px 21px rgb(99 134 137 / 16%);
+    transition: .5s ease;
+}
+
+.filter .shop:hover {
+    box-shadow: 10px 10px 5px 0px rgba(17, 51, 68, 0.2);
+}
+
+.filter .cart {
+    /* background-color: rgb(179 174 178 / 50%); */
+    /* padding: 5% 0px;
+    position: relative;
+    top: -104px;
+    bottom: 0;
+    color: #fff; */
+    /* position: absolute;
+    top: 249.5px;
+    padding: 3% 41px;
+    color: #fff; */
+    /* padding: 6%; */
+}
+
+.filter .cart span {
+    display: block;
+}
+
+.filter .cart button {
+    background-color: #f45d96;
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.filter .cart button:hover,
+.about button:hover {
+    background-color: #dddedf;
+    color: rgba(33, 35, 36, 0.88);
+    box-shadow: 6px 6px 5px 0px rgba(17, 51, 68, 0.07);
+    transition: .4s all ease-in-out;
+}
+
+/*about*/
+#about .about-content .pic2 {
+    background-image: url("../images/linh-le-2Yvop7VGdWo-unsplash.jpg");
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin-left: 30px;
+}
+
+#about .about-content .aboutUs .us {
+    color: #f45d96;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#about .about-content .aboutUs .choose {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+#about .about-content .aboutUs p {
+    color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#about .about-content .aboutUs .link .vehicle {
+    background: #f45d96;
+    color: #fff;
+    padding: 8px 15px;
+    border: 1px solid #f45d96;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* contact us */
+.contact-information {
+    background-color: #fbfbfb;
+    box-shadow: 3px 3px 2px rgb(99 134 137 / 16%);
+}
+
+.contact-information span {
+    display: none;
+    font-size: 13px;
+    color: red;
+    padding: 0 12px;
+}
+
+.contact-information textarea {
+    border-radius: .375rem;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+}
+
+.contactUs {
+    font-size: 28px;
+    font-weight: 500;
+    /* margin-bottom: 40px; */
+}
+
+.contact-information .btn-accent {
+    background: #f45d96;
+    border: 1px solid #f45d96;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgb(99 134 137 / 16%);
+}
+
+.contact-information .btn-reset {
+    background: #dddedf;
+    border: 1px solid #dddedf;
+    color: #151515;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgb(99 134 137 / 16%);
+}
+
+/* scroll */
+#scroll {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #f45d96;
+    /* color: #fff; */
+    cursor: pointer;
+    display: none;
+}
+
+#scroll .top {
+    background: transparent;
+    border: 0 transparent;
+}
+
+#scroll .top i {
+    margin-top: 14px;
+    font-size: 17px;
+    color: #fff;
+    transition: .4s all ease-in-out;
+}
+
+#scroll .top i:hover {
+    margin-top: 7px;
+}
+
+/* media query */
+@media only screen and (max-width: 769px) {
+    .headerText {
+        width: 83%;
+        top: 30%;
+    }
+
+    .prev,
+    .next {
+        top: 40%;
+    }
+
+    .secondAbout {
+        padding: 40px 50px;
+        margin-top: -40px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    nav .navbar-brand {
+        margin-right: 0;
+    }
+
+    .headerText {
+        width: 100%;
+        top: 35%;
+    }
+
+    .prev,
+    .next {
+        top: 60%;
+        font-size: 30px;
+    }
+
+    .secondAbout {
+        padding: 40px;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .btnFilter {
+        margin-bottom: 5px;
+    }
+
+    #about .about-content .pic2 {
+        display: none;
+    }
+}
